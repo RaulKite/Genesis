@@ -22,9 +22,9 @@ class DeviseCreateUsers < ActiveRecord::Migration
     #Añadimos un usuario administrador
     say "Creando usuario administrador"
     
-    User.create :nombre => "Raul", :email => "raul@um.es", :password =>"cambiame"
-    User.create :nombre => "Webmaster", :email => "webmaster@example.com", :password => "cambiame"    
-    User.create :nombre => "Profesor", :email => "profesor@example.com", :password => "cambiame"    
+    User.create :nombre => "Admin", :email => "raul@um.es", :password =>"changeme"
+    User.create :nombre => "Webmaster", :email => "webmaster@example.com", :password => "changeme"    
+    User.create :nombre => "Profesor", :email => "profesor@example.com", :password => "changeme"    
     
   end
   
