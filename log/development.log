@@ -1,0 +1,446 @@
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (25.8ms)
+Compiled scaffolds.css  (35ms)  (pid 20526)
+Completed 200 OK in 198ms (Views: 197.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /welcome.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ryanb.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /ryanb.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /roles.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/roles.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /roles.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:50 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 187ms (Views: 25.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /roles.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ryanb.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /ryanb.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /roles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-09 13:43:55 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-01-09 13:44:03 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW3AuwBMwD+4Li7WVdakcZ3o6+NmusDgwRJwcTxcS9s=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "failed_attempts" = 1, "updated_at" = '2012-01-09 12:44:04.134654' WHERE "users"."id" = 1
+Completed 401 Unauthorized in 229ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW3AuwBMwD+4Li7WVdakcZ3o6+NmusDgwRJwcTxcS9s=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Rendered devise/shared/_links.erb (0.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 101ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /roles.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ryanb.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /ryanb.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /welcome.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /roles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:04 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-01-09 13:44:10 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW3AuwBMwD+4Li7WVdakcZ3o6+NmusDgwRJwcTxcS9s=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "failed_attempts" = 2, "updated_at" = '2012-01-09 12:44:11.025020' WHERE "users"."id" = 1
+Completed 401 Unauthorized in 133ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW3AuwBMwD+4Li7WVdakcZ3o6+NmusDgwRJwcTxcS9s=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Rendered devise/shared/_links.erb (0.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 101ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /roles.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ryanb.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /ryanb.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /roles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /welcome.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:11 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-01-09 13:44:17 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW3AuwBMwD+4Li7WVdakcZ3o6+NmusDgwRJwcTxcS9s=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "failed_attempts" = 0, "updated_at" = '2012-01-09 12:44:18.030022' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = '2012-01-09 12:44:18.033970', "sign_in_count" = 2, "updated_at" = '2012-01-09 12:44:18.034273' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 200ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 85ms (Views: 83.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /pages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/ryanb.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /ryanb.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /roles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /roles.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:18 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" 
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 1 AND "roles"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 1 AND "roles"."id" = 2 LIMIT 1
+Rendered users/_form.erb (164.3ms)
+Rendered users/edit.html.erb within layouts/application (166.4ms)
+Completed 200 OK in 239ms (Views: 175.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /roles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ryanb.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /ryanb.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /roles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:20 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/ryanb.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /ryanb.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /roles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /welcome.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /pages.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /roles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
+Served asset /welcome.js - 304 Not Modified (0ms)

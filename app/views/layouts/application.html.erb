@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= render_title %></title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <% if user_signed_in? -%>
+      <div id="user_login_box" style="float:right">
+          <%= current_user.email %> |
+          <%= link_to 'My info', edit_user_path(current_user) %> |
+          <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+      </div>
+  <% else %> 
+      <div id="user_login_box" style="float:right">
+          <%= link_to 'Autenticate', new_user_session_path %>
+      </div>        
+  <% end -%>
+
+ <div id="container">
+       <% flash.each do |name, msg| %>
+         <%= content_tag :div, msg, :id => "flash_#{name}" %>
+       <% end %>
+       <%= yield %>
+     </div>
+</body>
+</html>
