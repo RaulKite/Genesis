@@ -2,11 +2,14 @@
 <html>
 <head>
   <title><%= render_title %></title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
+  <%# stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag    "bootstrap" %>
+  <%# javascript_include_tag "application" %>
+  <%= javascript_include_tag "bootstrap" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+ <div class="container">
   <% if user_signed_in? -%>
       <div id="user_login_box" style="float:right">
           <%= current_user.email %> |
@@ -19,11 +22,10 @@
       </div>        
   <% end -%>
 
- <div id="container">
        <% flash.each do |name, msg| %>
          <%= content_tag :div, msg, :id => "flash_#{name}" %>
        <% end %>
        <%= yield %>
-     </div>
+ </div>
 </body>
 </html>

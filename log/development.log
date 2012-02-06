@@ -444,3 +444,1090 @@ Served asset /application.js - 304 Not Modified (1ms)
 
 Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-01-09 13:44:27 +0100
 Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-01 12:32:20 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 235ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /pages.css - 200 OK (31ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /roles.css - 200 OK (2ms)
+
+
+Started GET "/assets/ryanb.css?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /ryanb.css - 200 OK (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /users.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /scaffolds.css - 200 OK (6ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /welcome.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /pages.js - 200 OK (4ms)
+
+
+Started GET "/assets/roles.js?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /roles.js - 200 OK (5ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /welcome.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-02-01 12:32:21 +0100
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:32:23 +0100
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (46.3ms)
+Completed 200 OK in 195ms (Views: 66.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:32:25 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dqUUzwXdQXTRblVfF73e5dPSdyUZLWZZS5/qnj23FRo=", "user"=>{"email"=>"webmaster@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'webmaster@example.com' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2012-01-09 09:58:06.858358', "current_sign_in_at" = '2012-02-01 11:32:26.049495', "sign_in_count" = 5, "updated_at" = '2012-02-01 11:32:26.049792' WHERE "users"."id" = 2
+Redirected to http://localhost:3000/
+Completed 302 Found in 312ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-01 12:32:26 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 84ms (Views: 81.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2012-02-01 12:32:28 +0100
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mRole Load (0.3ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 2 AND "roles"."name" = 'Webmaster' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" 
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 2 AND "roles"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 2 AND "roles"."id" = 2 LIMIT 1
+Rendered users/_form.erb (11.0ms)
+Rendered users/edit.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 259ms (Views: 22.6ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2012-02-01 12:32:34 +0100
+  Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dqUUzwXdQXTRblVfF73e5dPSdyUZLWZZS5/qnj23FRo="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 85ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-01 12:32:34 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:32:36 +0100
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (0.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 71ms (Views: 13.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:32:45 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin@example.com' LIMIT 1
+Completed 401 Unauthorized in 56ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Rendered devise/shared/_links.erb (0.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 124ms (Views: 13.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:32:54 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@example.com' LIMIT 1[0m
+Completed 401 Unauthorized in 22ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Rendered devise/shared/_links.erb (0.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 147ms (Views: 12.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:33:57 +0100
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.1ms)
+Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 90ms (Views: 48.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:34:03 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "failed_attempts" = 1, "updated_at" = '2012-02-01 11:34:03.497633' WHERE "users"."id" = 1[0m
+Completed 401 Unauthorized in 153ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Rendered devise/shared/_links.erb (0.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 103ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:34:08 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "failed_attempts" = 2, "updated_at" = '2012-02-01 11:34:08.605016' WHERE "users"."id" = 1[0m
+Completed 401 Unauthorized in 147ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Rendered devise/shared/_links.erb (0.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 101ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:34:13 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "failed_attempts" = 3, "updated_at" = '2012-02-01 11:34:14.200255' WHERE "users"."id" = 1[0m
+Completed 401 Unauthorized in 148ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Rendered devise/shared/_links.erb (0.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 102ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:34:17 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "failed_attempts" = 4, "updated_at" = '2012-02-01 11:34:17.850022' WHERE "users"."id" = 1[0m
+Completed 401 Unauthorized in 191ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Rendered devise/shared/_links.erb (0.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 101ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:34:24 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "failed_attempts" = 5, "updated_at" = '2012-02-01 11:34:24.214727' WHERE "users"."id" = 1[0m
+Completed 401 Unauthorized in 154ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Rendered devise/shared/_links.erb (0.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 101ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-01 12:34:27 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++ydik+7gZtSQSgZn5UVTdcyEpkhLQ+uGGZZj1BW8PQ=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "failed_attempts" = 0, "updated_at" = '2012-02-01 11:34:27.607401' WHERE "users"."id" = 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2012-01-09 12:44:18.033970', "current_sign_in_at" = '2012-02-01 11:34:27.611554', "sign_in_count" = 3, "updated_at" = '2012-02-01 11:34:27.611924' WHERE "users"."id" = 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 198ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-01 12:34:27 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-02-01 12:34:30 +0100
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" [0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 1 AND "roles"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 1 AND "roles"."id" = 2 LIMIT 1[0m
+Rendered users/_form.erb (49.9ms)
+Rendered users/edit.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 84ms (Views: 60.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-02-01 12:34:52 +0100
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Rendered users/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 100ms (Views: 69.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-02-01 12:34:59 +0100
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1
+Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 11.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-02-01 12:35:01 +0100
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" 
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 1 AND "roles"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 1 AND "roles"."id" = 2 LIMIT 1
+Rendered users/_form.erb (21.9ms)
+Rendered users/edit.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 57ms (Views: 32.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2012-02-01 12:35:07 +0100
+  Processing by RolesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" 
+Rendered roles/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 72ms (Views: 21.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2012-02-01 12:35:14 +0100
+  Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" 
+Rendered pages/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 72ms (Views: 23.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-06 11:15:24 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (40.6ms)
+ERROR: compiling _app_views_layouts_application_html_erb__868232606_88531140 RAISED /home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+...vascript_include_tag "bootstrap" );@output_buffer.safe_conca...
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+...('      <div id="user_login_box" style="float:right">
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d="user_login_box" style="float:right">
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+...('      <div id="user_login_box" style="float:right">
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d="user_login_box" style="float:right">
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+ <div id="container">
+                   ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+...t_tag :div, msg, :id => "flash_#{name}" );@output_buffer.saf...
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:30: unknown regexp options - bdy
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:31: syntax error, unexpected '<'
+</html>
+ ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:31: unterminated regexp meets end of file
+Function body:           def _app_views_layouts_application_html_erb__868232606_88531140(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>');@output_buffer.append= ( render_title );@output_buffer.safe_concat('</title>
+');
+@output_buffer.safe_concat('  ');@output_buffer.append= ( stylesheet_link_tag    "bootstrap"" );@output_buffer.safe_concat('
+');
+@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag "bootstrap" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tags );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+');   if user_signed_in? 
+@output_buffer.safe_concat('      <div id="user_login_box" style="float:right">
+          ');@output_buffer.append= ( current_user.email );@output_buffer.safe_concat(' |
+          ');@output_buffer.append= ( link_to 'My info', edit_user_path(current_user) );@output_buffer.safe_concat(' |
+          ');@output_buffer.append= ( link_to 'Sign out', destroy_user_session_path, :method => :delete );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+');   else  
+@output_buffer.safe_concat('      <div id="user_login_box" style="float:right">
+          ');@output_buffer.append= ( link_to 'Autenticate', new_user_session_path );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>        
+');   end 
+@output_buffer.safe_concat('
+ <div id="container">
+');        flash.each do |name, msg| 
+@output_buffer.safe_concat('         ');@output_buffer.append= ( content_tag :div, msg, :id => "flash_#{name}" );@output_buffer.safe_concat('
+');        end 
+@output_buffer.safe_concat('       ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('     </div>
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `module_eval'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `compile'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/template.rb:217:in `compile!'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/template.rb:170:in `block in render'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/notifications.rb:55:in `instrument'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/template.rb:169:in `render'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:52:in `render_with_layout'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:99:in `render'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/raul/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:167:in `process_action'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:416:in `_run__534330829__process_action__470773864__callbacks'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:121:in `process'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:45:in `process'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal.rb:193:in `dispatch'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_controller/metal.rb:236:in `block in action'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:532:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/warden-1.1.0/lib/warden/manager.rb:35:in `block in call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/warden-1.1.0/lib/warden/manager.rb:34:in `catch'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/warden-1.1.0/lib/warden/manager.rb:34:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/flash.rb:247:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.3/lib/active_record/query_cache.rb:64:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.1.3/lib/rails/rack/logger.rb:13:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/static.rb:53:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.1.3/lib/rails/engine.rb:456:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/content_length.rb:14:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.1.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/raul/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/raul/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/raul/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/raul/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Completed 500 Internal Server Error in 144ms
+
+ActionView::Template::Error (/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+...vascript_include_tag "bootstrap" );@output_buffer.safe_conca...
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+...('      <div id="user_login_box" style="float:right">
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d="user_login_box" style="float:right">
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+...('      <div id="user_login_box" style="float:right">
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d="user_login_box" style="float:right">
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+ <div id="container">
+                   ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+...t_tag :div, msg, :id => "flash_#{name}" );@output_buffer.saf...
+...                               ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:30: unknown regexp options - bdy
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:31: syntax error, unexpected '<'
+</html>
+ ^
+/home/raul/miscosas/github/Genesis/app/views/layouts/application.html.erb:31: unterminated regexp meets end of file):
+    5:   <%# stylesheet_link_tag    "application" %>
+    6:   <%= stylesheet_link_tag    "bootstrap"" %>
+    7:   <%# javascript_include_tag "application" %>
+    8:   <%= javascript_include_tag "bootstrap" %>
+    9:   <%= csrf_meta_tags %>
+    10: </head>
+    11: <body>
+  
+
+Rendered /home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-06 11:17:36 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (40.1ms)
+Compiled bootstrap.css  (0ms)  (pid 6888)
+Compiled bootstrap.js  (0ms)  (pid 6888)
+Completed 200 OK in 178ms (Views: 177.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:17:36 +0100
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:17:36 +0100
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-06 11:17:39 +0100
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 192ms (Views: 39.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-06 11:17:53 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4U2fNmJEVZ0GUgMnmg/CJgbT59bfucJK4uYbYVK4D8=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "failed_attempts" = 1, "updated_at" = '2012-02-06 10:17:53.444669' WHERE "users"."id" = 1
+Completed 401 Unauthorized in 342ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4U2fNmJEVZ0GUgMnmg/CJgbT59bfucJK4uYbYVK4D8=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Rendered devise/shared/_links.erb (1.0ms)
+Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 108ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-06 11:17:56 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4U2fNmJEVZ0GUgMnmg/CJgbT59bfucJK4uYbYVK4D8=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "failed_attempts" = 2, "updated_at" = '2012-02-06 10:17:56.880014' WHERE "users"."id" = 1
+Completed 401 Unauthorized in 134ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4U2fNmJEVZ0GUgMnmg/CJgbT59bfucJK4uYbYVK4D8=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Rendered devise/shared/_links.erb (27.4ms)
+Rendered devise/sessions/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 127ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-02-06 11:18:01 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4U2fNmJEVZ0GUgMnmg/CJgbT59bfucJK4uYbYVK4D8=", "user"=>{"email"=>"raul@um.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raul@um.es' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "failed_attempts" = 0, "updated_at" = '2012-02-06 10:18:01.519820' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2012-02-01 11:34:27.611554', "current_sign_in_at" = '2012-02-06 10:18:01.523670', "sign_in_count" = 4, "updated_at" = '2012-02-06 10:18:01.523960' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 203ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-06 11:18:01 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-02-06 11:18:04 +0100
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" 
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 1 AND "roles"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 1 AND "roles"."id" = 2 LIMIT 1
+Rendered users/_form.erb (227.0ms)
+Rendered users/edit.html.erb within layouts/application (238.3ms)
+Completed 200 OK in 279ms (Views: 245.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/roles" for 127.0.0.1 at 2012-02-06 11:18:09 +0100
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"roles"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "roles"]]
+Completed 404 Not Found in 26ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=roles):
+  
+
+Rendered /home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /home/raul/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2012-02-06 11:18:14 +0100
+  Processing by RolesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" 
+Rendered roles/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 90ms (Views: 45.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2012-02-06 11:19:06 +0100
+  Processing by RolesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" 
+Rendered roles/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 85ms (Views: 45.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:19:06 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:19:06 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2012-02-06 11:19:19 +0100
+  Processing by RolesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered roles/_form.html.erb (6.7ms)
+Rendered roles/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 107ms (Views: 63.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:19:19 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:19:19 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2012-02-06 11:20:44 +0100
+  Processing by RolesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered roles/_form.html.erb (8.6ms)
+Rendered roles/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 67ms (Views: 18.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:20:44 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:20:44 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2012-02-06 11:20:45 +0100
+  Processing by RolesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered roles/_form.html.erb (7.8ms)
+Rendered roles/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 70ms (Views: 21.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:20:46 +0100
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:20:46 +0100
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2012-02-06 11:20:47 +0100
+  Processing by RolesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered roles/_form.html.erb (7.8ms)
+Rendered roles/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 66ms (Views: 18.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:20:47 +0100
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:20:47 +0100
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2012-02-06 11:20:49 +0100
+  Processing by RolesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" 
+Rendered roles/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 64ms (Views: 16.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2012-02-06 11:20:51 +0100
+  Processing by RolesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered roles/_form.html.erb (7.8ms)
+Rendered roles/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 67ms (Views: 18.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2012-02-06 11:23:37 +0100
+  Processing by RolesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered roles/_form.html.erb (6.6ms)
+Rendered roles/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 53ms (Views: 14.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:23:37 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:23:37 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-06 11:25:14 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 86ms (Views: 84.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:25:14 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:25:14 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-02-06 11:25:17 +0100
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" [0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 1 AND "roles"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = 1 AND "roles"."id" = 2 LIMIT 1[0m
+Rendered users/_form.erb (21.8ms)
+Rendered users/edit.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 92ms (Views: 29.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:25:17 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:25:17 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-02-06 11:25:23 +0100
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 71ms (Views: 39.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:25:23 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:25:23 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-06 11:25:25 +0100
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" [0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" IS NULL AND "roles"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" IS NULL AND "roles"."id" = 2 LIMIT 1[0m
+Rendered users/_form.erb (22.4ms)
+Rendered users/new.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 95ms (Views: 30.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:25:25 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:25:25 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-06 11:34:39 +0100
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 87ms (Views: 85.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:34:39 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:34:39 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2012-02-06 11:34:46 +0100
+  Processing by RolesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" 
+Rendered roles/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 88ms (Views: 15.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:34:46 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:34:46 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2012-02-06 11:34:47 +0100
+  Processing by RolesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered roles/_form.html.erb (6.8ms)
+Rendered roles/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 93ms (Views: 15.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:34:48 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:34:48 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2012-02-06 11:35:18 +0100
+  Processing by RolesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered roles/_form.html.erb (6.4ms)
+Rendered roles/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 82ms (Views: 15.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:35:18 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:35:18 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started POST "/roles" for 127.0.0.1 at 2012-02-06 11:35:25 +0100
+  Processing by RolesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4U2fNmJEVZ0GUgMnmg/CJgbT59bfucJK4uYbYVK4D8=", "role"=>{"name"=>"prueba", "descripcion"=>"Prueba"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "roles" ("created_at", "descripcion", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 06 Feb 2012 10:35:25 UTC +00:00], ["descripcion", "Prueba"], ["name", "prueba"], ["updated_at", Mon, 06 Feb 2012 10:35:25 UTC +00:00]]
+Redirected to http://localhost:3000/roles/3
+Completed 302 Found in 93ms
+
+
+Started GET "/roles/3" for 127.0.0.1 at 2012-02-06 11:35:25 +0100
+  Processing by RolesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m
+Rendered roles/show.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 82ms (Views: 43.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:35:25 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:35:25 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2012-02-06 11:35:29 +0100
+  Processing by RolesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles" [0m
+Rendered roles/index.html.erb within layouts/application (42.2ms)
+Completed 200 OK in 102ms (Views: 52.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:35:29 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:35:29 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/3/edit" for 127.0.0.1 at 2012-02-06 11:35:33 +0100
+  Processing by RolesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1
+Rendered roles/_form.html.erb (6.4ms)
+Rendered roles/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 84ms (Views: 46.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:35:33 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:35:33 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started PUT "/roles/3" for 127.0.0.1 at 2012-02-06 11:35:37 +0100
+  Processing by RolesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4U2fNmJEVZ0GUgMnmg/CJgbT59bfucJK4uYbYVK4D8=", "role"=>{"name"=>"prueba2", "descripcion"=>"Prueba2"}, "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "roles" SET "name" = 'prueba2', "descripcion" = 'Prueba2', "updated_at" = '2012-02-06 10:35:37.232489' WHERE "roles"."id" = 3
+Redirected to http://localhost:3000/roles/3
+Completed 302 Found in 62ms
+
+
+Started GET "/roles/3" for 127.0.0.1 at 2012-02-06 11:35:37 +0100
+  Processing by RolesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m
+Rendered roles/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 66ms (Views: 15.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:35:37 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:35:37 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2012-02-06 11:35:44 +0100
+  Processing by RolesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles" [0m
+Rendered roles/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 61ms (Views: 17.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:35:44 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:35:44 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/3/edit" for 127.0.0.1 at 2012-02-06 11:35:46 +0100
+  Processing by RolesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1
+Rendered roles/_form.html.erb (8.3ms)
+Rendered roles/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 69ms (Views: 19.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:35:46 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:35:46 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/3/edit" for 127.0.0.1 at 2012-02-06 11:37:16 +0100
+  Processing by RolesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m
+Rendered roles/_form.html.erb (7.2ms)
+Rendered roles/edit.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 65ms (Views: 16.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:37:16 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:37:16 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/3/edit" for 127.0.0.1 at 2012-02-06 11:37:27 +0100
+  Processing by RolesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1
+Rendered roles/_form.html.erb (9.0ms)
+Rendered roles/edit.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 70ms (Views: 20.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:37:27 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:37:27 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/3/edit" for 127.0.0.1 at 2012-02-06 11:37:35 +0100
+  Processing by RolesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m
+Rendered roles/_form.html.erb (6.9ms)
+Rendered roles/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 54ms (Views: 15.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:37:35 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:37:35 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/3/edit" for 127.0.0.1 at 2012-02-06 11:37:41 +0100
+  Processing by RolesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1
+Rendered roles/_form.html.erb (9.0ms)
+Rendered roles/edit.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 69ms (Views: 19.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:37:42 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:37:42 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/3/edit" for 127.0.0.1 at 2012-02-06 11:40:06 +0100
+  Processing by RolesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m
+Rendered roles/_form.html.erb (7.0ms)
+Rendered roles/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 70ms (Views: 18.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:40:07 +0100
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:40:07 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/roles/3/edit" for 127.0.0.1 at 2012-02-06 11:40:56 +0100
+  Processing by RolesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1
+Rendered roles/_form.html.erb (6.4ms)
+Rendered roles/edit.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 56ms (Views: 16.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-02-06 11:40:56 +0100
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-02-06 11:40:56 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
