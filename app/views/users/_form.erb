@@ -20,7 +20,7 @@
     <%= f.label :nombre %><br />
     <%= f.text_field :nombre %>
   </div>
-  <% if @current_method == "new" %>
+
     <div class="field">
       <%= f.label :password %><br />
       <%= f.password_field :password %>
@@ -29,7 +29,7 @@
       <%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation %>
     </div>
-    <% end %>
+
 
    
     <% if can? :manage, Role %>  
